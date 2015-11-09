@@ -1,12 +1,5 @@
 FROM php:5.6-apache
 
-# RUN find / ! -path "/proc/*" -user www-data -exec chown -h 1000 {} \;
-# RUN find / ! -path "/proc/*" -group www-data -exec chgrp -h 1000 {} \;
-
-# RUN usermod --uid 1000 www-data
-# RUN groupmod --gid 1000 www-data
-# RUN usermod --gid 1000 www-data
-
 RUN apt-get update && apt-get install -y \
 	bzip2 \
 	libcurl4-openssl-dev \
