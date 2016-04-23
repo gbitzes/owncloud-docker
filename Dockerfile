@@ -1,4 +1,4 @@
-FROM owncloud:8.2
+FROM owncloud:9.0.1
 
 RUN apt-get update && apt-get install -y \
     vim \
